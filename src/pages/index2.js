@@ -8,6 +8,7 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import Navigation2 from "../components/navigation2";
 
 const index2Page = ({ data: { site } }) => {
   return (
@@ -17,7 +18,8 @@ const index2Page = ({ data: { site } }) => {
         <meta name="description" content={site.siteMetadata.description} />
       </Helmet>
       {/* <!-- Navigation--> */}
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+      <Navigation2 />
+      {/* <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
         <div class="container">
           <a class="navbar-brand js-scroll-trigger" href="#page-top">
             Start Bootstrap
@@ -58,7 +60,7 @@ const index2Page = ({ data: { site } }) => {
             </ul>
           </div>
         </div>
-      </nav>
+      </nav> */}
       {/* <!-- Masthead--> */}
       <header class="masthead">
         <div class="container h-100">
