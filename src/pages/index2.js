@@ -1,7 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
-import Super from "../components/super.js";
+import CreativeGh from "../components/creativeGh.js";
 
 const index2Page = ({ data: { site } }) => {
   return (
@@ -12,7 +12,7 @@ const index2Page = ({ data: { site } }) => {
         {/* <body className="new-class-for-body" /> */}
         {/* <body data-spy="scroll" /> */}
       </Helmet>
-      <Super />
+      <CreativeGh />
     </div>
   );
 };

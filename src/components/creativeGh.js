@@ -24,7 +24,7 @@ import portfolio5thumbnail from "../../static/assets/img/portfolio/thumbnails/5.
 import portfolio6fullsize from "../../static/assets/img/portfolio/fullsize/6.jpg";
 import portfolio6thumbnail from "../../static/assets/img/portfolio/thumbnails/6.jpg";
 
-class Super extends Component {
+class CreativeGh extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -350,4 +350,4 @@ class Super extends Component {
   }
 }
 
-export default Super;
+export default CreativeGh;
