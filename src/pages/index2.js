@@ -1,7 +1,8 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
-import CreativeGh from "../components/creativeGh.js";
+// import CreativeGh from "../components/creativeGh.js";
+import MyNavBar from "../components/myNavbar.js";
 
 const index2Page = ({ data: { site } }) => {
   return (
@@ -12,7 +13,8 @@ const index2Page = ({ data: { site } }) => {
         {/* <body className="new-class-for-body" /> */}
         {/* <body data-spy="scroll" /> */}
       </Helmet>
-      <CreativeGh />
+      {/* <CreativeGh /> */}
+      <MyNavBar />
     </div>
   );
 };
