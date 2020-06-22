@@ -7,3 +7,4 @@ import "./src/css/styles.css"; // Core theme CSS (includes Bootstrap)
 //import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js"; // Bootstrap core JS
 // import "jquery/dist/jquery.min.js";
+import "./src/css/myNavbar.scss";
