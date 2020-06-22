@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import $ from "jquery"; // Bootstrap core JS
-// import "jquery.easing"; // Third party plugin JS
-// import "magnific-popup"; // Third party plugin JS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Font Awesome icons
 import {
   faGem,

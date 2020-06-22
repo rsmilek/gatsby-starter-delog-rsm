@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import $ from "jquery"; // Bootstrap core JS
-// import "jquery.easing"; // Third party plugin JS
 
 class MyNavbar extends Component {
   constructor(props) {
@@ -30,16 +29,36 @@ class MyNavbar extends Component {
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
+    // Smooth scrolling using jQuery easing
+    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+      if (
+        window.location.pathname.replace(/^\//, "") === this.pathname.replace(/^\//, "") &&
+        window.location.hostname === this.hostname
+      ) {
+        var target = $(this.hash);
+        target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
+        if (target.length) {
+          $("html, body").animate(
+            {
+              scrollTop: target.offset().top - 72,
+            },
+            1000,
+            "easeInOutExpo"
+          );
+          return false;
+        }
+      }
+    });
   }
 
   render() {
     return (
-      <div>
+      <div id="pageTop">
         {/* <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="myNavbar"> */}
         {/* <nav className="navbar navbar-expand-lg sticky-top" id="myNavbar"> */}
         <nav className="navbar navbar-expand-lg fixed-top" id="myNavbar">
           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-          <a className="navbar-brand js-scroll-trigger" href="#">
+          <a className="navbar-brand js-scroll-trigger" href="#pageTop">
             Navbar
           </a>
           <button

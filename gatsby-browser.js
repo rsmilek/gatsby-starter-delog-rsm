@@ -13,4 +13,5 @@ import "./src/css/myNavbar.scss"; // Core theme CSS (includes Bootstrap)
 // JS
 import "bootstrap/dist/js/bootstrap.bundle.min.js"; // Bootstrap core JS
 import "jquery/dist/jquery.min.js";
+import "jquery.easing/jquery.easing.min.js";
 import "magnific-popup/dist/jquery.magnific-popup.min.js";
