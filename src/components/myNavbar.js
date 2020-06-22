@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import $ from "jquery"; // Bootstrap core JS
-import "jquery.easing"; // Third party plugin JS
+// import "jquery.easing"; // Third party plugin JS
 
 class MyNavbar extends Component {
   constructor(props) {
